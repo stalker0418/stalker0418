@@ -15,7 +15,11 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 - Completing tasks while hearing music
-<img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/219bcc70-f5dc-466b-9a60-29653d8e8433" width="500">
+<!-- <img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/219bcc70-f5dc-466b-9a60-29653d8e8433" width="500">
+ -->
+ <p align="center">
+  <img height="200" src="https://github-readme-utils.vercel.app/api/gif/anime" alt="Random GiF">
+</p>
 <br><br>
 </br>
 </br>
