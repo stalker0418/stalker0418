@@ -1,44 +1,92 @@
-name: Generate Snake Animation
+# name: Generate Snake Animation
+
+# on:
+#   # Schedule the action to run at a specific time (e.g., daily)
+#   schedule:
+#     - cron: "0 0 * * *"  # Runs at midnight every day
+#   # Allows the workflow to run manually from the Actions tab
+#   workflow_dispatch:
+#   # Run the workflow when a new commit is pushed to the main branch
+#   push:
+#     branches:
+#       - main
+
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       # Checkout the repository
+#       - name: Checkout
+#         uses: actions/checkout@v3
+
+#       # Generate the snake animation
+#       - name: Generate Snake Animation
+#         uses: Platane/snk@main
+#         with:
+#           github_user_name: stalker0418  # Replace with your GitHub username
+#           svg_out_path: dist/github-contribution-grid-snake.svg  # Correct output path
+
+#       # Ensure the output directory exists (if not created by previous step)
+#       - name: Ensure Output Directory Exists
+#         run: mkdir -p dist
+
+#       # Push the generated snake.svg to the output branch
+#       - name: Push to output branch
+#         uses: crazy-max/ghaction-github-pages@v3
+#         with:
+#           target_branch: output
+#           build_dir: dist
+#           keep_history: false
+#           allow_empty_commit: true
+#           jekyll: true
+#         env:
+#           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}  # Ensure this matches your secret name
+
+# GitHub Action for generating a contribution graph with a snake eating your contributions.
+
+name: Generate Snake
+
+# Controls when the action will run. This action runs every 6 hours.
 
 on:
-  # Schedule the action to run at a specific time (e.g., daily)
   schedule:
-    - cron: "0 0 * * *"  # Runs at midnight every day
-  # Allows the workflow to run manually from the Actions tab
+      # every 6 hours
+    - cron: "0 */6 * * *"
+
+# This command allows us to run the Action automatically from the Actions tab.
   workflow_dispatch:
-  # Run the workflow when a new commit is pushed to the main branch
-  push:
-    branches:
-      - main
 
+# The sequence of runs in this workflow:
 jobs:
+  # This workflow contains a single job called "build"
   build:
+    # The type of runner that the job will run on
+    permissions: 
+      contents: write
     runs-on: ubuntu-latest
+    timeout-minutes: 5
 
+    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checkout the repository
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      # Generate the snake animation
-      - name: Generate Snake Animation
-        uses: Platane/snk@main
+      # generates a snake game from a github user (<github_user_name>) contributions graph, output a svg animation at <svg_out_path>
+      - name: generate github-contribution-grid-snake.svg
+        uses: Platane/snk/svg-only@v3
         with:
-          github_user_name: stalker0418  # Replace with your GitHub username
-          svg_out_path: dist/github-contribution-grid-snake.svg  # Correct output path
-
-      # Ensure the output directory exists (if not created by previous step)
-      - name: Ensure Output Directory Exists
-        run: mkdir -p dist
-
-      # Push the generated snake.svg to the output branch
-      - name: Push to output branch
-        uses: crazy-max/ghaction-github-pages@v3
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+          
+          
+      # push the content of <build_dir> to a branch
+      # the content will be available at https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file> , or as github page
+      - name: push github-contribution-grid-snake.svg to the output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
           build_dir: dist
-          keep_history: false
-          allow_empty_commit: true
-          jekyll: true
         env:
-          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}  # Ensure this matches your secret name
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}

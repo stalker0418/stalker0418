@@ -35,7 +35,7 @@ Here are some ideas to get you started:
 - Machine learning enthusiast passionate about building deep learning models for real-world applications. I believe in the power of practical solutions to drive innovation and am focused on exploring their potential in the industry.
 
 ##### - Things I love :
-- **Anime**: Code Geass(🧠 🔫 🕵️), Psycho Pass(🤴 🤖 🗡️), One Piece(🏴‍☠️ 🌊 🍖)
+- **Anime**: Code Geass(🤴 🤖 🗡️), Psycho Pass(🧠 🔫 🕵️), One Piece(🏴‍☠️ 🌊 🍖)
 - **Sports**: Football⚽, Cricket🏏, Volleyball🏐, Badminton🏸
 - **Favorite Tracks**: Mari Antaga - SVSC[🔗](https://www.youtube.com/watch?v=ZwGPx75hVLk), 
                    Ranbu No Melody - Bleach [🔗](https://www.youtube.com/watch?v=5emM3JGI5JA), 
