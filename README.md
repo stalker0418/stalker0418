@@ -75,10 +75,10 @@ Here are some ideas to get you started:
 </p>
 
 
-### Connect with me
+## Connect with me
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/manas-sanjay/) [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:pakalapati.sanjay@gmail.com) [![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discordapp.com/users/730923270559367240)
 
 
- ### My Contributions
+ ## My Contributions
 ![Snake animation](https://github.com/stalker0418/stalker0418/blob/output/github-contribution-grid-snake-dark.svg)
 
