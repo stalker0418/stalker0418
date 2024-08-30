@@ -1,4 +1,7 @@
-## Hi there 👋
+## Hi there, This is Manas 👋
+
+
+
 
 <!--
 **stalker0418/stalker0418** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -14,12 +17,10 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-- Completing tasks while hearing music
-<!-- <img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/219bcc70-f5dc-466b-9a60-29653d8e8433" width="500">
- -->
- <p align="center">
-  <img height="200" src="https://github-readme-utils.vercel.app/api/gif/anime" alt="Random GiF">
-</p>
+
+<img src="https://user-images.githubusercontent.com/74038190/212750672-2f3f2b50-c84f-4ed8-a60a-849ae69ff9df.gif" width="500">
+
+ 
 <br><br>
 </br>
 </br>
@@ -28,5 +29,15 @@ Here are some ideas to get you started:
 
 # About ME 💬 :
 
-### - This here is a 25 year old Machine Learning Engineer tweaking with building of new DL solutions for real world problems.
+### - This here is a Machine Learning Engineer tweaking with building new DL model architectures for real world problems.
+
+#### - Things I love :
+- Anime: Code Geass, Psycho Pass, One Piece
+- Sports: Football, Cricket, Volleyball, Badminton
+- Evergreen Tracks:  Adhenti Okkasariga(Jersey), Good Riddance(Green Day), Murise Mabbula(SVSC)
+
+<p align="center">
+  <img height="200" src="https://github-readme-utils.vercel.app/api/gif/anime" alt="Random GiF">
+</p>
+
 
